@@ -135,7 +135,6 @@ void GuestInit(Hotel* h, Guest g[], GuestName gn[]) {
 
 int CheckRoom(Hotel* h, Guest g[], int f, int num, bool isReason) {
     int guestNum = h->rooms[f][num];
-    printf("f: %d, num: %d guestNum: %d\n", f, num, guestNum);
     if (isReason) {
         if (guestNum != cm.getKillerGuest() + 1) {
             isWin = false;
